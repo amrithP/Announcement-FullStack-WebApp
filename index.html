@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Announcement App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color:green;
+        }
+
+        #textbox, #datebox {
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        #textbox {
+            width: 300px;
+        }
+
+        #button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-size: 16px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Announcements</h2>
+    <input id="textbox" type="text" placeholder="Type your announcement here...">
+    <input id="datebox" type="date">
+    <button id="button">Send</button>
+
+    <ul id="message"></ul>
+
+    <script src="messaging.js"></script>
+</body>
+</html>
